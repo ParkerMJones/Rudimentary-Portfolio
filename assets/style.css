@@ -67,7 +67,7 @@ header nav ul li a:hover {
     display: block;
     text-align: center;
     color: white;
-    text-decoration: underline;
+    text-decoration: underline rgba(255, 255, 255, 0.892);
     font-size: xx-large;
     padding: 10px;
 }
@@ -81,6 +81,8 @@ header nav ul li a:hover {
 
 .Description {
     padding: 4px;
+    width: 65%;
+    justify-content: flex-end;
 }
 
 .Description h3 {
@@ -95,9 +97,9 @@ header nav ul li a:hover {
 .album-overview {
     background-color: var(--secondary-color);
     padding: 50px;
-    width: 65%;
-    justify-content: center;
-    align-items: center
+    width: 35%;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .album-overview p {
@@ -110,7 +112,7 @@ header nav ul li a:hover {
     justify-content: space-between;
     width: 80%;
     align-items: center;
-    padding: 5px;
+    margin-bottom: 12px;
 }
 
 .release-title {
@@ -123,12 +125,21 @@ header nav ul li a:hover {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    padding-left: 4%;
+    padding-right: 2%;
+}
+
+.discography-rows {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
 }
 
 .contact {
     background-color: var(--primary-color);
     display: block;
     text-align: center;
+    padding: 30px;
 
 }
 
@@ -152,25 +163,29 @@ form button {
     width: 20%;
     border: none;
     color: var(--tertiary-color);
-    background-color: rgba(255, 255, 255, 0.892);;
+    background-color: rgba(255, 255, 255, 0.892);
     font-size: 16px;
     text-align: center;
     border-radius: 10px;
     padding: 10px 0;
 }
 
+form button:hover {
+    background-color: var(--tertiary-color);
+    color: rgba(255, 255, 255, 0.892);
+}
 
 footer {
     background-color: var(--primary-color);
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: flex-end;
     bottom: 0;
     padding: 12px;
 }
 
 footer img {
-    width: 10%;
+    width: 15%;
 }
 
 
