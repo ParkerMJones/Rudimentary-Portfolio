@@ -181,11 +181,12 @@ form button:hover {
 footer {
     background-color: var(--primary-color);
     bottom: 0;
-    padding: 12px;
+    padding: 5px;
 }
 
 footer img {
-    width: 15%;
+    width: 13%;
+    align-items: flex-end;
 }
 
 footer p {
