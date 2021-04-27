@@ -65,8 +65,7 @@ header nav ul li a:hover {
 
 .section-title {
     display: block;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
     color: white;
     text-decoration: underline;
     font-size: xx-large;
@@ -89,6 +88,10 @@ header nav ul li a:hover {
     font-weight: bold;
 }
 
+.Description p {
+    line-height: 1.6;
+}
+
 .album-overview {
     background-color: var(--secondary-color);
     padding: 50px;
@@ -104,7 +107,7 @@ header nav ul li a:hover {
 
 .album-cover img {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 80%;
     align-items: center;
     padding: 5px;
@@ -114,32 +117,30 @@ header nav ul li a:hover {
     font-weight: bold;
 }
 
-.Description p {
-    line-height: 1.6;
-}
-
 .discography {
     background-color: var(--primary-color);
-}
-
-.discography-rows {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
 
-.discography-rows iframe {
-    justify-content: flex-start;
-}
-
 .contact {
     background-color: var(--primary-color);
+    display: block;
+    text-align: center;
+
 }
 
-form input, form textarea {
-    display: block;
+form {
+    display: inline-block;
+    justify-content: center;
     width: 30%;
+}
+
+
+form input, form textarea {
+    width: 100%;
     margin-bottom: 10px;
     background-color: rgba(255, 255, 255, 0.892);
     border-radius: 10px;
@@ -148,7 +149,7 @@ form input, form textarea {
 }
 
 form button {
-    width: 15%;
+    width: 20%;
     border: none;
     color: var(--tertiary-color);
     background-color: rgba(255, 255, 255, 0.892);;
