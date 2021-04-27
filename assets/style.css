@@ -56,7 +56,7 @@ header nav ul li a:hover {
 }
 
 .hero {
-    background-color: var(--primary-color);
+    background-image: url("./background-idea.png");
     display: flex;
     justify-content: center;
     align-items: center;
@@ -136,7 +136,9 @@ header nav ul li a:hover {
 }
 
 .contact {
-    background-color: var(--primary-color);
+    background-image: url("./background-idea-2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     display: block;
     text-align: center;
     padding: 30px;
@@ -144,6 +146,7 @@ header nav ul li a:hover {
 }
 
 form {
+    color: white;
     display: inline-block;
     justify-content: center;
     width: 30%;
@@ -160,7 +163,7 @@ form input, form textarea {
 }
 
 form button {
-    width: 20%;
+    width: 40%;
     border: none;
     color: var(--tertiary-color);
     background-color: rgba(255, 255, 255, 0.892);
@@ -177,9 +180,6 @@ form button:hover {
 
 footer {
     background-color: var(--primary-color);
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-end;
     bottom: 0;
     padding: 12px;
 }
@@ -188,5 +188,9 @@ footer img {
     width: 15%;
 }
 
+footer p {
+    display: block;
+    text-align: right;
+}
 
 
