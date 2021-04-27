@@ -1,0 +1,136 @@
+:root {
+    --primary-color: black;
+    --secondary-color: rgba(0, 0, 0, 0.9);
+    --tertiary-color: darkred;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Courier New', Courier, monospace;
+}
+
+p {
+    color: white;
+}
+
+header {
+    padding: 10px;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    top: 0;
+}
+
+header img {
+    width: 25%;
+}
+
+header nav ul {
+    padding: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    color: var(--tertiary-color);
+    text-decoration: none;
+}
+
+header nav ul li a {
+    padding: 10px 15px;
+    font-size: x-large;
+}
+
+li a:hover {
+    text-decoration: underline var(--secondary-color);
+}
+
+.hero {
+    background-color: var(--secondary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-decoration: underline;
+    font-size: xx-large;
+    padding: 10px;
+}
+
+.recent-release {
+    background-color: var(--primary-color);
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.Description h3 {
+    color: White;
+    font-weight: bold;
+}
+
+.album-overview {
+    background-color: var(--secondary-color);
+    padding: 7px;
+    width: 50%;
+    justify-content: center;
+    align-items: center
+}
+
+.album-overview p {
+    margin: 2px;
+    line-height: 1.4;
+}
+
+.album-cover img {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    align-items: center;
+    padding: 5px;
+}
+
+.release-title {
+    font-weight: bold;
+}
+
+.Description p {
+    line-height: 1.6;
+}
+
+.discography {
+    background-color: var(--secondary-color);
+}
+
+.discography-rows {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    background-color: var(--primary-color);
+    display: flex;
+    flex-wrap; wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    bottom: 0;
+    padding: 12px;
+}
+
+footer img {
+    width: 10%;
+}
+
+.contact {
+    background-color: var(--primary-color);
+}
+
