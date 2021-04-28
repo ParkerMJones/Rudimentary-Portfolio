@@ -265,7 +265,10 @@ footer p {
     }
 
     .section-title {
-        display: none;
+        padding: 7px;
+        padding-left: 0px;
+        font-size: small;
+        border-right: none;
     }
 
     header nav ul li a {
@@ -279,5 +282,11 @@ footer p {
     .landing {
         width: 90%;
         padding-top: 66.6%;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .section-title {
+        display: none;
     }
 }
