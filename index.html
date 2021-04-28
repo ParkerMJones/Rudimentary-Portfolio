@@ -31,7 +31,7 @@
 <!-- Hero Video -->
     <section class="hero">
         <div class="landing">
-            <video width="720" height="540" controls>
+            <video class="responsive-frame" controls>
                 <source src="./assets/restricted-parking-hd.mp4" type="video/mp4">
             </video>
         </div>
@@ -87,6 +87,9 @@
             <div class="music-player">    
                 <iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=980255717/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://sudaunt.bandcamp.com/album/interstice">Interstice by Sudaunt</a></iframe>
             </div>
+            <div class="music-player-small">
+                <iframe style="border: 0; width: 170px; height: 170px;" src="https://bandcamp.com/EmbeddedPlayer/album=980255717/size=large/bgcol=ffffff/linkcol=0687f5/minimal=true/transparent=true/" seamless><a href="https://sudaunt.bandcamp.com/album/interstice">Interstice by Sudaunt</a></iframe>
+            </div>
         </div>
     </section>
 
@@ -95,13 +98,22 @@
         <!-- Rows of Media Players (Bandcamp embed for now, custom playlists w/future Javascript) -->
         <h2 class="section-title">Discography</h2>
             <div class="discography-rows">
-                <iframe style="border: 0; width: 350px; height: 470px;" src="https://bandcamp.com/EmbeddedPlayer/album=980255717/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="https://sudaunt.bandcamp.com/album/interstice">Interstice by Sudaunt</a></iframe>
-                <iframe style="border: 0; width: 350px; height: 470px;" src="https://bandcamp.com/EmbeddedPlayer/album=3169189596/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="https://sudaunt.bandcamp.com/album/for-greg">For Greg by Sudaunt</a></iframe>
-                <iframe style="border: 0; width: 350px; height: 470px;" src="https://bandcamp.com/EmbeddedPlayer/album=1449030134/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="https://sudaunt.bandcamp.com/album/hope-dread">Hope/[Dread] by Sudaunt</a></iframe>
-                <iframe style="border: 0; width: 350px; height: 470px;" src="https://bandcamp.com/EmbeddedPlayer/album=1686543051/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="https://sudaunt.bandcamp.com/album/basic-arrhythmias">Basic Arrhythmias by Sudaunt</a></iframe>
-                <iframe style="border: 0; width: 350px; height: 470px;" src="https://bandcamp.com/EmbeddedPlayer/album=1752666279/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="https://sudaunt.bandcamp.com/album/for-john">For John by Sudaunt</a></iframe>
-                <iframe style="border: 0; width: 350px; height: 470px;" src="https://bandcamp.com/EmbeddedPlayer/album=3029803561/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="https://sudaunt.bandcamp.com/album/apothe">Apothe by Sudaunt</a></iframe>
-                <iframe style="border: 0; width: 350px; height: 470px;" src="https://bandcamp.com/EmbeddedPlayer/album=3172600844/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="https://sudaunt.bandcamp.com/album/viridian">Viridian by Sudaunt</a></iframe>
+                <iframe src="https://bandcamp.com/EmbeddedPlayer/album=980255717/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="https://sudaunt.bandcamp.com/album/interstice">Interstice by Sudaunt</a></iframe>
+                <iframe src="https://bandcamp.com/EmbeddedPlayer/album=3169189596/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="https://sudaunt.bandcamp.com/album/for-greg">For Greg by Sudaunt</a></iframe>
+                <iframe src="https://bandcamp.com/EmbeddedPlayer/album=1449030134/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="https://sudaunt.bandcamp.com/album/hope-dread">Hope/[Dread] by Sudaunt</a></iframe>
+                <iframe src="https://bandcamp.com/EmbeddedPlayer/album=1686543051/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="https://sudaunt.bandcamp.com/album/basic-arrhythmias">Basic Arrhythmias by Sudaunt</a></iframe>
+                <iframe src="https://bandcamp.com/EmbeddedPlayer/album=1752666279/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="https://sudaunt.bandcamp.com/album/for-john">For John by Sudaunt</a></iframe>
+                <iframe src="https://bandcamp.com/EmbeddedPlayer/album=3029803561/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="https://sudaunt.bandcamp.com/album/apothe">Apothe by Sudaunt</a></iframe>
+                <iframe src="https://bandcamp.com/EmbeddedPlayer/album=3172600844/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="https://sudaunt.bandcamp.com/album/viridian">Viridian by Sudaunt</a></iframe>
+            </div>
+            <div class="discography-rows-small">
+                <iframe src="https://bandcamp.com/EmbeddedPlayer/album=980255717/size=large/bgcol=ffffff/linkcol=0687f5/minimal=true/transparent=true/" seamless><a href="https://sudaunt.bandcamp.com/album/interstice">Interstice by Sudaunt</a></iframe>
+                <iframe src="https://bandcamp.com/EmbeddedPlayer/album=3169189596/size=large/bgcol=ffffff/linkcol=0687f5/minimal=true/transparent=true/" seamless><a href="https://sudaunt.bandcamp.com/album/for-greg">For Greg by Sudaunt</a></iframe>
+                <iframe src="https://bandcamp.com/EmbeddedPlayer/album=1449030134/size=large/bgcol=ffffff/linkcol=0687f5/minimal=true/transparent=true/" seamless><a href="https://sudaunt.bandcamp.com/album/hope-dread">Hope/[Dread] by Sudaunt</a></iframe>
+                <iframe src="https://bandcamp.com/EmbeddedPlayer/album=1686543051/size=large/bgcol=ffffff/linkcol=0687f5/minimal=true/transparent=true/" seamless><a href="https://sudaunt.bandcamp.com/album/basic-arrhythmias">Basic Arrhythmias by Sudaunt</a></iframe>
+                <iframe src="https://bandcamp.com/EmbeddedPlayer/album=1752666279/size=large/bgcol=ffffff/linkcol=0687f5/minimal=true/transparent=true/" seamless><a href="https://sudaunt.bandcamp.com/album/for-john">For John by Sudaunt</a></iframe>
+                <iframe src="https://bandcamp.com/EmbeddedPlayer/album=3029803561/size=large/bgcol=ffffff/linkcol=0687f5/minimal=true/transparent=true/" seamless><a href="https://sudaunt.bandcamp.com/album/apothe">Apothe by Sudaunt</a></iframe>
+                <iframe src="https://bandcamp.com/EmbeddedPlayer/album=3172600844/size=large/bgcol=ffffff/linkcol=0687f5/minimal=true/transparent=true/" seamless><a href="https://sudaunt.bandcamp.com/album/viridian">Viridian by Sudaunt</a></iframe>
             </div>
         </div>
     </section>

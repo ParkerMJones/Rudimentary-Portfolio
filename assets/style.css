@@ -92,6 +92,22 @@ header nav ul li a:hover {
     border-bottom: white solid 1px;
 }
 
+.landing {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 25%;
+}
+
+.responsive-frame {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
 
 .contact {
     display: flex;
@@ -145,12 +161,31 @@ header nav ul li a:hover {
 
 .discography-rows {
     padding-left: 25px;
+    flex-wrap: wrap;
+}
+
+.discography-rows-small {
+    flex-wrap: wrap;
+}
+
+.discography-rows iframe {
+    border: 0; 
+    width: 350px; 
+    height: 470px;
+}
+
+.discography-rows-small iframe {
+    border: 0;
+    width: 170px;
+    height: 170px;
 }
 
 form {
     color: white;
     padding-left: 25px;
 }
+
+
 
 form input, form textarea {
     width: 100%;
@@ -167,7 +202,6 @@ form button {
     color: var(--tertiary-color);
     background-color: rgba(255, 255, 255, 0.892);
     font-size: 16px;
-    text-align: center;
     border-radius: 10px;
     padding: 10px 0;
 }
@@ -193,4 +227,55 @@ footer p {
     text-align: right;
 }
 
+@media screen and (min-width: 561px) {
+    .discography-rows {
+        display: inherit;
+    }
 
+    .discography-rows-small {
+        display: none;
+    }
+
+    .music-player {
+        display: inherit;
+    }
+
+    .music-player-small {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .discography-rows {
+        display: none;
+    }
+
+    .discography-rows-small {
+        display: inherit;
+    }
+
+    .music-player {
+        display: none;
+    }
+
+    .music-player-small {
+        display: inherit;
+    }
+
+    .section-title {
+        display: none;
+    }
+
+    header nav ul li a {
+        font-size: small; 
+    }
+
+    .album-overview {
+        display: none;
+    }
+
+    .landing {
+        width: 90%;
+        padding-top: 66.6%;
+    }
+}
