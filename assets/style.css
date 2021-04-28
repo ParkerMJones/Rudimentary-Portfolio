@@ -20,22 +20,31 @@ header {
     background-color: var(--primary-color);
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     top: 0;
     border-bottom: white solid 1px;
 }
 
-header img {
-    width: 25%;
+header a {
+    width: 30%;
+}
+
+header a img {
+    justify-content: flex-start;
+    width: 30%;
+}
+header nav {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
 header nav ul {
-    padding: 40px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    display: inherit;
+    font-size: medium;
     list-style: none;
+    width: 70%;
 }
 
 header nav ul li {
@@ -44,7 +53,6 @@ header nav ul li {
 
 header nav ul li a {
     padding: 10px 15px;
-    font-size: x-large;
     color: inherit;
     text-decoration: none;
 }
@@ -97,7 +105,7 @@ header nav ul li a:hover {
     position: relative;
     overflow: hidden;
     width: 100%;
-    padding-top: 35%;
+    padding-top: 30%;
 }
 
 .responsive-frame {
@@ -123,6 +131,7 @@ header nav ul li a:hover {
 
 .Description {
     padding: 4px;
+    padding-left: 30px;
     width: 65%;
     justify-content: flex-end;
 }
@@ -138,7 +147,7 @@ header nav ul li a:hover {
 
 .album-overview {
     background-color: var(--secondary-color);
-    padding: 25px;
+    padding: 15px;
     width: 35%;
     justify-content: flex-start;
     align-items: flex-end;
@@ -162,18 +171,19 @@ header nav ul li a:hover {
 }
 
 .discography-rows {
-    padding-left: 25px;
+    padding-left: 20px;
     flex-wrap: wrap;
 }
 
 .discography-rows-small {
+    padding-left: 20px;
     flex-wrap: wrap;
 }
 
 .discography-rows iframe {
     border: 0; 
-    width: 350px; 
-    height: 470px;
+    width: 280px; 
+    height: 422px;
 }
 
 .discography-rows-small iframe {
@@ -229,7 +239,7 @@ footer p {
     text-align: right;
 }
 
-@media screen and (min-width: 661px) {
+@media screen and (min-width: 781px) {
     .discography-rows {
         display: inherit;
     }
@@ -245,9 +255,11 @@ footer p {
     .music-player-small {
         display: none;
     }
+
+
 }
 
-@media screen and (max-width: 660px) {
+@media screen and (max-width: 780px) {
     .discography-rows {
         display: none;
     }
@@ -257,22 +269,21 @@ footer p {
     }
 
     .music-player {
-        display: none;
+        display: inherit;
     }
 
     .music-player-small {
-        display: inherit;
+        display: none;
     }
 
     .section-title {
-        padding: 7px;
-        padding-left: 0px;
+        padding: 10px;
+        padding-left: 5px;
         font-size: small;
-        border-right: none;
     }
 
-    header nav ul li a {
-        font-size: small; 
+    header nav ul {
+        font-size: x-small; 
     }
 
     .album-overview {
@@ -283,8 +294,34 @@ footer p {
         width: 90%;
         padding-top: 66.6%;
     }
+
+    .discography-rows iframe {
+        border: 0; 
+        width: 170px; 
+        height: 312px;
 }
 
+@media screen and (max-width: 520px) {
+
+    .music-player {
+        display: none;
+    }
+
+    .music-player-small {
+        display: inherit;
+    }
+
+    header nav ul {
+        font-size: xx-small;
+    }
+
+    .section-title {
+        border-right: none;
+    }
+
+    
+
+}
 @media screen and (max-width: 300px) {
     .section-title {
         display: none;
