@@ -22,6 +22,7 @@ header {
     justify-content: space-between;
     flex-wrap: wrap;
     top: 0;
+    border-bottom: white solid 1px;
 }
 
 header img {
@@ -61,22 +62,45 @@ header nav ul li a:hover {
     justify-content: center;
     align-items: center;
     padding: 25px;
+    border-bottom: white solid 1px;
 }
 
 .section-title {
-    display: block;
-    text-align: center;
+    display: flex;
+    align-items: center;
     color: white;
     text-decoration: underline rgba(255, 255, 255, 0.892);
     font-size: xx-large;
     padding: 10px;
+    padding-right: 30px;
+    border-right: white solid 2px;
 }
 
 .recent-release {
     background-color: var(--primary-color);
     display: flex;
     flex-wrap: nowrap;
+    padding: 30px;
+    border-bottom: white solid 1px;
+}
+
+.discography {
+    background-color: var(--primary-color);
+    display: flex;
+    flex-wrap: nowrap;
     padding: 25px;
+    border-bottom: white solid 1px;
+}
+
+
+.contact {
+    display: flex;
+    flex-wrap: nowrap;
+    background-image: url("./background-idea-2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 30px;
+
 }
 
 .Description {
@@ -96,10 +120,10 @@ header nav ul li a:hover {
 
 .album-overview {
     background-color: var(--secondary-color);
-    padding: 50px;
+    padding: 25px;
     width: 35%;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-end;
 }
 
 .album-overview p {
@@ -119,39 +143,14 @@ header nav ul li a:hover {
     font-weight: bold;
 }
 
-.discography {
-    background-color: var(--primary-color);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    padding-left: 4%;
-    padding-right: 2%;
-}
-
 .discography-rows {
-    display: flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-}
-
-.contact {
-    background-image: url("./background-idea-2.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: block;
-    text-align: center;
-    padding: 30px;
-
+    padding-left: 25px;
 }
 
 form {
     color: white;
-    display: inline-block;
-    justify-content: center;
-    width: 30%;
+    padding-left: 25px;
 }
-
 
 form input, form textarea {
     width: 100%;
