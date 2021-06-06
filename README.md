@@ -1,4 +1,4 @@
-# Rudimentary-Portfolio
+# Portfolio
 
 Second implementation of portfolio website for myself, as both programmer and musician.
 
